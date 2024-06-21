@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '.github/workflows/matrix.yml'
   pull_request:
     branches:
       - master
-
+    paths:
+      - '.github/workflows/matrix.yml'
+      
 jobs:
   build-ubuntu:
     runs-on: ubuntu-latest
